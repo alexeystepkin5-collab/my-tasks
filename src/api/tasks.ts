@@ -8,7 +8,7 @@ export async function getTasks(): Promise<Task[]> {
   const response = await fetch('/api/tasks')
 
   if (!response.ok) {
-    throw new Error(`Не удалось загрузить книги: ${response.status}`)
+    throw new Error(`Не удалось загрузить задачу: ${response.status}`)
   }
 
   return response.json() as Promise<Task[]>

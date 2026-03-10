@@ -67,9 +67,13 @@ export const TaskAddDialog: React.FC<TaskAddDialogProps> = ({
             autoFocus
           />
           <Select
+            title="Заполните это поле."
             label="Выберите приоритет"
             value={priority}
-            onChange={(e) => setPriority(e.target.value)}>
+            onChange={(e) => setPriority(e.target.value)}
+            fullWidth
+            required
+            >
             <MenuItem value={"Low"}>Low</MenuItem>
             <MenuItem value={"Normal"}>Normal</MenuItem>
             <MenuItem value={"High"}>High</MenuItem>
