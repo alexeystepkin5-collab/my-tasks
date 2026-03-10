@@ -18,8 +18,8 @@ export const TasksManager: React.FC<TasksManagerProps> = ({ }) => {
   const {
     data,
     isLoading,
-    isError,
-    error,
+    //isError,
+    //error,
   } = useQuery<Task[]>({
     queryKey: ['tasks'],
     queryFn: getTasks,
